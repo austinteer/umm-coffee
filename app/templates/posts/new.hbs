@@ -1,0 +1,16 @@
+<hr>
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="postTitle" class="col-sm-1 control-label">Name</label>
+    <div class="col-sm-3">
+    {{input type="text" placeholder="Post Title" id="postTitle" value=postTitle class="form-control"}}
+    </div>
+    <label for="postBody" class="col-sm-1 control-label">Message</label>
+    <div class="col-sm-5">
+    {{textarea placeholder="Post Body" id="postBody" value=postBody class="form-control"}}
+    </div>
+    <div class="col-sm-2">
+    <button {{action "publishPost"}} class="btn btn-default">Publish</button>
+    </div>
+  </div>
+</form>

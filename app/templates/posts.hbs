@@ -1,0 +1,13 @@
+<h1>Posts</h1>
+{{#link-to 'posts.new' classNames="btn btn-primary"}}Add New Post{{/link-to}}
+
+{{#each post in model }}
+	<div>
+		<h3>{{ post.postTitle }}</h3>
+		<p>{{ post.postBody }} {{ post.timestamp }}</p>
+	</div>
+{{else}}
+<p>No posts yet!</p>
+{{/each}}
+
+{{outlet}}

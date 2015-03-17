@@ -1,0 +1,25 @@
+<div class="col-sm-9">
+	<div class="panel panel-default">
+	  
+	  <div class="panel-heading">
+	    <h3 class="panel-title">Chat Messages <span class="badge">3</span></h3>
+	  </div>
+	  
+	  <div class="panel-body">
+	    
+	    {{#each message in model}}
+				<div>{{message.name}}: {{message.body}}</div>
+			{{else}}
+				<p>No Messages yet. Be the first person to {{#link-to 'messages.new'}}add a message!{{/link-to}}</p> 
+			{{/each}}
+
+	  {{outlet}}
+
+	  </div>
+	</div>
+	
+	{{#link-to 'messages.new' classNames="btn btn-primary"}}Add Message{{/link-to}}
+
+</div>
+
+

@@ -1,0 +1,16 @@
+<hr>
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="userName" class="col-sm-1 control-label">Name</label>
+    <div class="col-sm-3">
+    {{input type="text" placeholder="Name" id="userName" value=name class="form-control"}}
+    </div>
+    <label for="chatMessage" class="col-sm-1 control-label">Message</label>
+    <div class="col-sm-5">
+    	{{input type="textarea" placeholder="Message here" id="chatMessage" value=body class="form-control"}}
+    </div>
+    <div class="col-sm-2">
+    <button {{action 'addMessage' }} class="btn btn-default">Submit</button>
+    </div>
+  </div>
+</form>
