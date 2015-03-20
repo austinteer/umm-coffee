@@ -7,7 +7,7 @@ module.exports = function(environment) {
         contentSecurityPolicy: {
             'connect-src': "'self' wss://*.firebaseio.com"
         },
-        firebase: 'https://appchatter.firebaseio.com',
+        firebase: 'firebase url',
         baseURL: '/',
         locationType: 'auto',
         EmberENV: {
